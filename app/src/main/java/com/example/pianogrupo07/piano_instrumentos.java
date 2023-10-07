@@ -34,76 +34,76 @@ public class piano_instrumentos extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.arpa);
-                mediaPlayer.start(); // Reproduce el primer sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de una Arpa", Toast.LENGTH_SHORT).show();
+                mediaPlayer.start();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_arpa, Toast.LENGTH_SHORT).show();
             }
         });
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.bateria);
-                mediaPlayer.start(); // Reproduce el segundo sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de una Bateria", Toast.LENGTH_SHORT).show();
+                mediaPlayer.start();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_bateria, Toast.LENGTH_SHORT).show();
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.flautaa);
-                mediaPlayer.start(); // Reproduce el primer sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de una Flauta", Toast.LENGTH_SHORT).show();
+                mediaPlayer.start();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_flauta, Toast.LENGTH_SHORT).show();
             }
         });
 
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.guitarra);
-                mediaPlayer.start(); // Reproduce el segundo sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de una Guitarra", Toast.LENGTH_SHORT).show();
+                mediaPlayer.start();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_guitarra, Toast.LENGTH_SHORT).show();
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.maracas);
-                mediaPlayer.start(); // Reproduce el primer sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de unas Maracas", Toast.LENGTH_SHORT).show();
+                mediaPlayer.start();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_unas_maracas, Toast.LENGTH_SHORT).show();
             }
         });
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.marimba);
-                mediaPlayer.start(); // Reproduce el primer sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de una Marimba", Toast.LENGTH_SHORT).show();
+                mediaPlayer.start();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_marimba, Toast.LENGTH_SHORT).show();
             }
         });
 
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.trompeta_1);
-                mediaPlayer.start(); // Reproduce el segundo sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de una Trompeta", Toast.LENGTH_SHORT).show();
+                mediaPlayer.start();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_trompeta, Toast.LENGTH_SHORT).show();
             }
         });
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.triangulo);
-                mediaPlayer.start(); // Reproduce el primer sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de un Triangulo", Toast.LENGTH_SHORT).show();
+                mediaPlayer.start();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_triangulo, Toast.LENGTH_SHORT).show();
             }
         });
 

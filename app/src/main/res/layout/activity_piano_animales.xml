@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.9"
             android:fontFamily="monospace"
-            android:text="Piano Infantil de la Selva"
+            android:text="@string/piano_infantil_de_la_selva"
             android:textSize="20sp" />
 
         <Button
@@ -50,7 +50,7 @@
             android:layout_weight="1"
             android:fontFamily="serif-monospace"
             android:gravity="center"
-            android:text="Presiona el animal"
+            android:text="@string/presiona_el_animal"
             android:textColor="#681515"
             android:textSize="48sp" />
 

@@ -23,5 +23,15 @@
     <string name="es_el_sonido_de_un_mono">Es el sonido de un Mono</string>
     <string name="es_el_sonido_de_un_perro">Es el sonido de un Perro</string>
     <string name="piano_tradicional">piano Tradicional</string>
+    <string name="piano_infantil_de_la_selva">Piano Infantil de la Selva</string>
+    <string name="presiona_el_animal">Presiona el animal</string>
+    <string name="es_el_sonido_de_una_arpa">Es el sonido de una Arpa</string>
+    <string name="es_el_sonido_de_una_bateria">Es el sonido de una Bateria</string>
+    <string name="es_el_sonido_de_una_flauta">Es el sonido de una Flauta</string>
+    <string name="es_el_sonido_de_una_guitarra">Es el sonido de una Guitarra</string>
+    <string name="es_el_sonido_de_unas_maracas">Es el sonido de unas Maracas</string>
+    <string name="es_el_sonido_de_una_marimba">Es el sonido de una Marimba</string>
+    <string name="es_el_sonido_de_una_trompeta">Es el sonido de una Trompeta</string>
+    <string name="es_el_sonido_de_un_triangulo">Es el sonido de un Triangulo</string>
 
 </resources>

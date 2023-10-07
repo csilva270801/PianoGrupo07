@@ -165,11 +165,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void Cerrar(View view) {
-        //stopMediaPlayer(); // Detén la reproducción de sonidos
-        finishAffinity(); // Cierra todas las actividades de la aplicación
-        System.exit(0);
 
-    }
 
 }

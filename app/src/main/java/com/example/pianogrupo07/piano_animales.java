@@ -31,9 +31,9 @@ public class piano_animales extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.elefante);
-                mediaPlayer.start(); // Reproduce el primer sonido
+                mediaPlayer.start();
                 Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_elefante, Toast.LENGTH_SHORT).show();
 
             }
@@ -42,18 +42,18 @@ public class piano_animales extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.gallo);
-                mediaPlayer.start(); // Reproduce el segundo sonido
+                mediaPlayer.start();
                 Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_gallo, Toast.LENGTH_SHORT).show();
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.gato);
-                mediaPlayer.start(); // Reproduce el primer sonido
+                mediaPlayer.start();
                 Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_gato, Toast.LENGTH_SHORT).show();
             }
         });
@@ -61,27 +61,27 @@ public class piano_animales extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.lion);
-                mediaPlayer.start(); // Reproduce el segundo sonido
+                mediaPlayer.start();
                 Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_leon, Toast.LENGTH_SHORT).show();
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.vaca);
-                mediaPlayer.start(); // Reproduce el primer sonido
+                mediaPlayer.start();
                 Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_vaca, Toast.LENGTH_SHORT).show();
             }
         });
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.mono);
-                mediaPlayer.start(); // Reproduce el primer sonido
+                mediaPlayer.start();
                 Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_mono, Toast.LENGTH_SHORT).show();
             }
         });
@@ -89,9 +89,9 @@ public class piano_animales extends AppCompatActivity {
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopMediaPlayer(); // Detén cualquier reproducción en curso
+                stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.perro);
-                mediaPlayer.start(); // Reproduce el segundo sonido
+                mediaPlayer.start();
                 Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_perro, Toast.LENGTH_SHORT).show();
             }
         });
