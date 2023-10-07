@@ -3,5 +3,12 @@
     <string name="espacio">. </string>
     <string name="salir">Salir</string>
     <string name="seleccionar_piano">Seleccionar Piano</string>
+    <string name="nota_musical_do">Nota Musical DO</string>
+    <string name="nota_musical_re">Nota Musical RE</string>
+    <string name="nota_musical_mi">Nota Musical MI</string>
+    <string name="nota_musical_fa">Nota Musical FA</string>
+    <string name="nota_musical_sol">Nota Musical SOL</string>
+    <string name="nota_musical_la">Nota Musical LA</string>
+    <string name="nota_musical_si">Nota Musical SI</string>
 
 </resources>

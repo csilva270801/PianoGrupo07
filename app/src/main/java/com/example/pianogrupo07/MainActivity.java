@@ -8,9 +8,10 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+    MediaPlayer mediaPlayer,mediaPlayerActual;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void SonidoDo(View view) {
         MediaPlayer sonido = MediaPlayer.create(MainActivity.this, R.raw.do1);
+        Toast.makeText(MainActivity.this, R.string.nota_musical_do, Toast.LENGTH_SHORT).show();
         if (sonido.isPlaying()){
             sonido.stop();
         } else {
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void SonidoRe(View view) {
         MediaPlayer sonido = MediaPlayer.create(MainActivity.this, R.raw.re);
+        Toast.makeText(MainActivity.this, R.string.nota_musical_re, Toast.LENGTH_SHORT).show();
         if (sonido.isPlaying()){
             sonido.stop();
         } else {
@@ -45,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void SonidoMi(View view) {
         MediaPlayer sonido = MediaPlayer.create(MainActivity.this, R.raw.mi);
+        Toast.makeText(MainActivity.this, R.string.nota_musical_mi, Toast.LENGTH_SHORT).show();
         if (sonido.isPlaying()){
             sonido.stop();
         } else {
@@ -58,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void SonidoFa(View view) {
         MediaPlayer sonido = MediaPlayer.create(MainActivity.this, R.raw.fa);
+        Toast.makeText(MainActivity.this, R.string.nota_musical_fa, Toast.LENGTH_SHORT).show();
         if (sonido.isPlaying()){
             sonido.stop();
         } else {
@@ -71,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void SonidoSol(View view) {
         MediaPlayer sonido = MediaPlayer.create(MainActivity.this, R.raw.sol);
+        Toast.makeText(MainActivity.this, R.string.nota_musical_sol, Toast.LENGTH_SHORT).show();
         if (sonido.isPlaying()){
             sonido.stop();
         } else {
@@ -84,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void SonidoLa(View view) {
         MediaPlayer sonido = MediaPlayer.create(MainActivity.this, R.raw.la);
+        Toast.makeText(MainActivity.this, R.string.nota_musical_la, Toast.LENGTH_SHORT).show();
         if (sonido.isPlaying()){
             sonido.stop();
         } else {
@@ -96,7 +103,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void SonidoSi(View view) {
+
         MediaPlayer sonido = MediaPlayer.create(MainActivity.this, R.raw.si);
+        Toast.makeText(MainActivity.this, R.string.nota_musical_si, Toast.LENGTH_SHORT).show();
         if (sonido.isPlaying()){
             sonido.stop();
         } else {
@@ -130,10 +139,24 @@ public class MainActivity extends AppCompatActivity {
                                 startActivity(intent);
                                 finish();
                                 break;
+
+                            case "Salir":
+                                stopMediaPlayer(); // Detén la reproducción de sonidos
+                                finishAffinity(); // Cierra todas las actividades de la aplicación
+                                System.exit(0);
+                                break;
                         }
                     }
                 });
         builder.show();
+    }
+    private void stopMediaPlayer() {
+
+        if (mediaPlayer != null && mediaPlayer.isPlaying()) {
+            mediaPlayer.stop();
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
     }
 
     public void Cerrar(View view) {
@@ -142,4 +165,5 @@ public class MainActivity extends AppCompatActivity {
         System.exit(0);
 
     }
+
 }
