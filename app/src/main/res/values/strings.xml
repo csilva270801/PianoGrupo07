@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">PianoGrupo#07</string>
     <string name="espacio">. </string>
+    <string name="salir">Salir</string>
+    <string name="seleccionar_piano">Seleccionar Piano</string>
 
 </resources>

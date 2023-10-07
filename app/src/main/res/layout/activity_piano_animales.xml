@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#8BC34A"
     android:orientation="vertical"
+    android:screenOrientation="landscape"
     tools:context=".piano_animales">
 
     <LinearLayout
@@ -31,7 +32,8 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1.6"
             android:backgroundTint="#00BCD4"
-            android:text="Seleccionar Piano" />
+            android:onClick="cuadroDialogo"
+            android:text="@string/seleccionar_piano" />
 
         <Button
             android:id="@+id/button2"
@@ -39,7 +41,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:backgroundTint="#00BCD4"
-            android:text="Salir" />
+            android:onClick="Cerrar"
+            android:text="@string/salir" />
 
     </LinearLayout>
 
@@ -61,13 +64,13 @@
             android:textSize="48sp" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:paddingLeft="10dp">
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/btnElefante"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
@@ -82,7 +85,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btnGallo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
@@ -91,11 +94,12 @@
                 app:icon="@drawable/gallo"
                 app:iconGravity="textStart"
                 app:iconSize="125dp"
+                app:iconTint="@color/white"
                 app:iconTintMode="multiply"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/btnGato"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
@@ -104,11 +108,12 @@
                 app:icon="@drawable/gato"
                 app:iconGravity="textStart"
                 app:iconSize="125dp"
+                app:iconTint="@color/white"
                 app:iconTintMode="multiply"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/btnLeon"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
@@ -117,11 +122,12 @@
                 app:icon="@drawable/leon"
                 app:iconGravity="textStart"
                 app:iconSize="150dp"
+                app:iconTint="@color/white"
                 app:iconTintMode="multiply"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/btnVaca"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
@@ -130,11 +136,12 @@
                 app:icon="@drawable/vaca"
                 app:iconGravity="textStart"
                 app:iconSize="125dp"
+                app:iconTint="@color/white"
                 app:iconTintMode="multiply"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/btnMono"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
@@ -143,11 +150,12 @@
                 app:icon="@drawable/mono"
                 app:iconGravity="textStart"
                 app:iconSize="125dp"
+                app:iconTint="@color/white"
                 app:iconTintMode="multiply"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/btnPerro"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="10dp"
@@ -156,6 +164,7 @@
                 app:icon="@drawable/perro"
                 app:iconGravity="textStart"
                 app:iconSize="125dp"
+                app:iconTint="@color/white"
                 app:iconTintMode="multiply"
                 tools:ignore="SpeakableTextPresentCheck" />
 
