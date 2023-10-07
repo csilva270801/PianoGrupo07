@@ -120,6 +120,7 @@ public class piano_instrumentos extends AppCompatActivity {
     }
 
     public void cuadroDialogo(View view) {
+        stopMediaPlayer();
         final String[] opciones = {"Piano Animales", "Piano tradicional", "Acerca de...", "Salir"};
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -141,9 +142,14 @@ public class piano_instrumentos extends AppCompatActivity {
                                 startActivity(intent);
                                 finish();
                                 break;
+                            case "Acerca de...":
+                                intent = new Intent(piano_instrumentos.this, AcercaDe.class);
+                                startActivity(intent);
+                                finish();
+                                break;
                             case "Salir":
-                                stopMediaPlayer(); // Detén la reproducción de sonidos
-                                finishAffinity(); // Cierra todas las actividades de la aplicación
+                                stopMediaPlayer();
+                                finishAffinity();
                                 System.exit(0);
                                 break;
                         }

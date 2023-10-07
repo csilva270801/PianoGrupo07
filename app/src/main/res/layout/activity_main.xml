@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="piano_tradicional"
+        android:text="@string/piano_tradicional"
         android:textColor="#ffffff"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,40 +25,24 @@
         android:id="@+id/btnSeleccionarPiano"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="13dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="9dp"
         android:backgroundTint="#606060"
         android:onClick="cuadroDialogo"
         android:text="@string/seleccionar_piano"
         android:textColor="#ffffff"
-        app:layout_constraintEnd_toStartOf="@+id/btnSalir"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnSalir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="2dp"
-        android:backgroundTint="#606060"
-        android:onClick="Cerrar"
-        android:text="@string/salir"
-        android:textColor="#ffffff"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-        app:layout_constraintEnd_toEndOf="@+id/constraintLayout" />
 
     <LinearLayout
         android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
 
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginStart="7dp"
         android:layout_marginBottom="1dp"
         android:background="@drawable/piano"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSeleccionarPiano">
 

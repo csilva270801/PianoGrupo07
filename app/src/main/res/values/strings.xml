@@ -10,5 +10,18 @@
     <string name="nota_musical_sol">Nota Musical SOL</string>
     <string name="nota_musical_la">Nota Musical LA</string>
     <string name="nota_musical_si">Nota Musical SI</string>
+    <string name="desarrolladores">DESARROLLADORES</string>
+    <string name="opciones">Opciones</string>
+    <string name="miguel_eduardo_zelaya_alvarado">Miguel Eduardo Zelaya Alvarado</string>
+    <string name="jefferson_javier_avelar_arriaza">Jefferson Javier Avelar Arriaza</string>
+    <string name="cesar_eduardo_silva_colocho">Cesar Eduardo Silva Colocho</string>
+    <string name="es_el_sonido_de_un_elefante">Es el sonido de un Elefante</string>
+    <string name="es_el_sonido_de_un_gallo">Es el sonido de un Gallo</string>
+    <string name="es_el_sonido_de_un_gato">Es el sonido de un Gato</string>
+    <string name="es_el_sonido_de_un_leon">Es el sonido de un Leon</string>
+    <string name="es_el_sonido_de_un_vaca">Es el sonido de un Vaca</string>
+    <string name="es_el_sonido_de_un_mono">Es el sonido de un Mono</string>
+    <string name="es_el_sonido_de_un_perro">Es el sonido de un Perro</string>
+    <string name="piano_tradicional">piano Tradicional</string>
 
 </resources>

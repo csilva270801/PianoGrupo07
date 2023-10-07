@@ -34,7 +34,7 @@ public class piano_animales extends AppCompatActivity {
                 stopMediaPlayer(); // Detén cualquier reproducción en curso
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.elefante);
                 mediaPlayer.start(); // Reproduce el primer sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de un Elefante", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_elefante, Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -45,7 +45,7 @@ public class piano_animales extends AppCompatActivity {
                 stopMediaPlayer(); // Detén cualquier reproducción en curso
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.gallo);
                 mediaPlayer.start(); // Reproduce el segundo sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de un Gallo", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_gallo, Toast.LENGTH_SHORT).show();
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +54,7 @@ public class piano_animales extends AppCompatActivity {
                 stopMediaPlayer(); // Detén cualquier reproducción en curso
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.gato);
                 mediaPlayer.start(); // Reproduce el primer sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de un Gato", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_gato, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -64,7 +64,7 @@ public class piano_animales extends AppCompatActivity {
                 stopMediaPlayer(); // Detén cualquier reproducción en curso
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.lion);
                 mediaPlayer.start(); // Reproduce el segundo sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de un Leon", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_leon, Toast.LENGTH_SHORT).show();
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +73,7 @@ public class piano_animales extends AppCompatActivity {
                 stopMediaPlayer(); // Detén cualquier reproducción en curso
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.vaca);
                 mediaPlayer.start(); // Reproduce el primer sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de un Vaca", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_vaca, Toast.LENGTH_SHORT).show();
             }
         });
         btn6.setOnClickListener(new View.OnClickListener() {
@@ -82,7 +82,7 @@ public class piano_animales extends AppCompatActivity {
                 stopMediaPlayer(); // Detén cualquier reproducción en curso
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.mono);
                 mediaPlayer.start(); // Reproduce el primer sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de un Mono", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_mono, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -92,7 +92,7 @@ public class piano_animales extends AppCompatActivity {
                 stopMediaPlayer(); // Detén cualquier reproducción en curso
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.perro);
                 mediaPlayer.start(); // Reproduce el segundo sonido
-                Toast.makeText(getApplicationContext(), "Es el sonido de un Perro", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_perro, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -106,6 +106,7 @@ public class piano_animales extends AppCompatActivity {
         }
     }
     public void cuadroDialogo(View view) {
+        stopMediaPlayer();
         final String[] opciones = {"Piano tradicional", "Piano instrumental", "Acerca de...", "Salir"};
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -118,18 +119,27 @@ public class piano_animales extends AppCompatActivity {
                         Intent intent;
                         switch (opcionSeleccionada) {
                             case "Piano tradicional":
+                                stopMediaPlayer();
                                 intent = new Intent(piano_animales.this, MainActivity.class);
                                 startActivity(intent);
                                 finish();
                                 break;
                             case "Piano instrumental":
+                                stopMediaPlayer();
                                 intent = new Intent(piano_animales.this, piano_instrumentos.class);
                                 startActivity(intent);
                                 finish();
                                 break;
+                            case "Acerca de...":
+                                stopMediaPlayer();
+                                intent = new Intent(piano_animales.this, AcercaDe.class);
+                                startActivity(intent);
+                                finish();
+                                break;
+
                             case "Salir":
-                                stopMediaPlayer(); // Detén la reproducción de sonidos
-                                finishAffinity(); // Cierra todas las actividades de la aplicación
+                                stopMediaPlayer();
+                                finishAffinity();
                                 System.exit(0);
                                 break;
 
@@ -140,6 +150,7 @@ public class piano_animales extends AppCompatActivity {
                 });
         builder.show();
     }
+
 
 
 }
