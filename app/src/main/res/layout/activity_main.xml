@@ -13,7 +13,6 @@
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/piano_tradicional"
         android:textColor="#ffffff"
@@ -26,12 +25,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
-        android:layout_marginEnd="9dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="#606060"
         android:onClick="cuadroDialogo"
         android:text="@string/seleccionar_piano"
         android:textColor="#ffffff"
-        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
@@ -39,18 +38,19 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
 
-        android:layout_marginStart="7dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/piano"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSeleccionarPiano">
 
 
         <Button
             android:id="@+id/btnDo"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="80dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:hint="@string/espacio"
@@ -60,7 +60,6 @@
 
         <Button
             android:id="@+id/btnRe"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="95dp"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
@@ -71,7 +70,6 @@
 
         <Button
             android:id="@+id/btnMi"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="98dp"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
@@ -82,8 +80,7 @@
 
         <Button
             android:id="@+id/btnFa"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="98dp"
+            android:layout_width="103dp"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:hint="@string/espacio"
@@ -93,8 +90,7 @@
 
         <Button
             android:id="@+id/btnSol"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="96dp"
+            android:layout_width="100dp"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:hint="@string/espacio"
@@ -104,7 +100,6 @@
 
         <Button
             android:id="@+id/btnLa"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="97dp"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
@@ -115,8 +110,7 @@
 
         <Button
             android:id="@+id/btnSi"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="97dp"
+            android:layout_width="98dp"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:hint="@string/espacio"
