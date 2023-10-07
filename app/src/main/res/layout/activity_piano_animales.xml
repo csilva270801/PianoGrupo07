@@ -35,15 +35,6 @@
             android:onClick="cuadroDialogo"
             android:text="@string/seleccionar_piano" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:backgroundTint="#00BCD4"
-            android:onClick="Cerrar"
-            android:text="@string/salir" />
-
     </LinearLayout>
 
     <LinearLayout

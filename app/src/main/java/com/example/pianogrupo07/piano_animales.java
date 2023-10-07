@@ -34,7 +34,7 @@ public class piano_animales extends AppCompatActivity {
                 stopMediaPlayer(); // Detén cualquier reproducción en curso
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.elefante);
                 mediaPlayer.start(); // Reproduce el primer sonido
-                Toast.makeText(getApplicationContext(), "Es un Elefante", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Es el sonido de un Elefante", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -45,6 +45,7 @@ public class piano_animales extends AppCompatActivity {
                 stopMediaPlayer(); // Detén cualquier reproducción en curso
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.gallo);
                 mediaPlayer.start(); // Reproduce el segundo sonido
+                Toast.makeText(getApplicationContext(), "Es el sonido de un Gallo", Toast.LENGTH_SHORT).show();
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +54,7 @@ public class piano_animales extends AppCompatActivity {
                 stopMediaPlayer(); // Detén cualquier reproducción en curso
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.gato);
                 mediaPlayer.start(); // Reproduce el primer sonido
+                Toast.makeText(getApplicationContext(), "Es el sonido de un Gato", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -62,6 +64,7 @@ public class piano_animales extends AppCompatActivity {
                 stopMediaPlayer(); // Detén cualquier reproducción en curso
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.lion);
                 mediaPlayer.start(); // Reproduce el segundo sonido
+                Toast.makeText(getApplicationContext(), "Es el sonido de un Leon", Toast.LENGTH_SHORT).show();
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +73,7 @@ public class piano_animales extends AppCompatActivity {
                 stopMediaPlayer(); // Detén cualquier reproducción en curso
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.vaca);
                 mediaPlayer.start(); // Reproduce el primer sonido
+                Toast.makeText(getApplicationContext(), "Es el sonido de un Vaca", Toast.LENGTH_SHORT).show();
             }
         });
         btn6.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +82,7 @@ public class piano_animales extends AppCompatActivity {
                 stopMediaPlayer(); // Detén cualquier reproducción en curso
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.mono);
                 mediaPlayer.start(); // Reproduce el primer sonido
+                Toast.makeText(getApplicationContext(), "Es el sonido de un Mono", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -87,6 +92,7 @@ public class piano_animales extends AppCompatActivity {
                 stopMediaPlayer(); // Detén cualquier reproducción en curso
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.perro);
                 mediaPlayer.start(); // Reproduce el segundo sonido
+                Toast.makeText(getApplicationContext(), "Es el sonido de un Perro", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -100,7 +106,7 @@ public class piano_animales extends AppCompatActivity {
         }
     }
     public void cuadroDialogo(View view) {
-        final String[] opciones = {"Piano tradicional", "Piano instrumental"};
+        final String[] opciones = {"Piano tradicional", "Piano instrumental", "Acerca de...", "Salir"};
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Selecciona una opción")
@@ -121,15 +127,19 @@ public class piano_animales extends AppCompatActivity {
                                 startActivity(intent);
                                 finish();
                                 break;
+                            case "Salir":
+                                stopMediaPlayer(); // Detén la reproducción de sonidos
+                                finishAffinity(); // Cierra todas las actividades de la aplicación
+                                System.exit(0);
+                                break;
+
+
+
                         }
                     }
                 });
         builder.show();
     }
 
-    public void Cerrar(View view) {
-        stopMediaPlayer(); // Detén la reproducción de sonidos
-        finishAffinity(); // Cierra todas las actividades de la aplicación
-        System.exit(0);
-    }
+
 }
