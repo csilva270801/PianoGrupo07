@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.9"
             android:fontFamily="monospace"
-            android:text="Piano Infantil de la Selva"
+            android:text="Piano de Instrumentos Musicales"
             android:textSize="20sp" />
 
         <Button
