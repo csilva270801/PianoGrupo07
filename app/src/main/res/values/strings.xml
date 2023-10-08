@@ -33,5 +33,6 @@
     <string name="es_el_sonido_de_una_marimba">Es el sonido de una Marimba</string>
     <string name="es_el_sonido_de_una_trompeta">Es el sonido de una Trompeta</string>
     <string name="es_el_sonido_de_un_triangulo">Es el sonido de un Triangulo</string>
+    <string name="acerca_de">Acerca de...</string>
 
 </resources>

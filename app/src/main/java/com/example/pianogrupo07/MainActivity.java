@@ -164,6 +164,23 @@ public class MainActivity extends AppCompatActivity {
             mediaPlayer = null;
         }
     }
+    public void salir(View view){
+        stopMediaPlayer();
+        finishAffinity();
+        System.exit(0);
+
+    }
+
+
+    public void Acercade(View view) {
+        stopMediaPlayer();
+        Intent intent;
+        intent = new Intent(MainActivity.this, AcercaDe.class);
+        startActivity(intent);
+        finish();
+
+
+    }
 
 
 

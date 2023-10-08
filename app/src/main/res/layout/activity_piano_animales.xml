@@ -23,19 +23,35 @@
             android:layout_weight="0.9"
             android:fontFamily="monospace"
             android:text="@string/piano_infantil_de_la_selva"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
+
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
+            android:id="@+id/btnCambiarPiano"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1.6"
             android:backgroundTint="#00BCD4"
             android:onClick="cuadroDialogo"
             android:text="@string/seleccionar_piano" />
 
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#00BCD4"
+            android:onClick="Acercade"
+            android:text="@string/acerca_de" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00BCD4"
+            android:onClick="salir"
+            android:text="@string/salir" />
+
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"

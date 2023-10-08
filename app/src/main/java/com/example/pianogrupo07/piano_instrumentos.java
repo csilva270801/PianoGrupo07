@@ -121,7 +121,7 @@ public class piano_instrumentos extends AppCompatActivity {
 
     public void cuadroDialogo(View view) {
         stopMediaPlayer();
-        final String[] opciones = {"Piano Animales", "Piano tradicional", "Acerca de...", "Salir"};
+        final String[] opciones = {"Piano Animales", "Piano tradicional"};
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Selecciona una opción")
@@ -142,20 +142,27 @@ public class piano_instrumentos extends AppCompatActivity {
                                 startActivity(intent);
                                 finish();
                                 break;
-                            case "Acerca de...":
-                                intent = new Intent(piano_instrumentos.this, AcercaDe.class);
-                                startActivity(intent);
-                                finish();
-                                break;
-                            case "Salir":
-                                stopMediaPlayer();
-                                finishAffinity();
-                                System.exit(0);
-                                break;
                         }
                     }
                 });
         builder.show();
+    }
+    public void salir(View view){
+        stopMediaPlayer();
+        finishAffinity();
+        System.exit(0);
+
+    }
+
+
+    public void Acercade(View view) {
+        stopMediaPlayer();
+        Intent intent;
+        intent = new Intent(piano_instrumentos.this, AcercaDe.class);
+        startActivity(intent);
+        finish();
+
+
     }
 
 
