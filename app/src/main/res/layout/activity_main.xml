@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/material_dynamic_neutral10"
-    android:screenOrientation="landscape"
     tools:context=".MainActivity">
 
     <TextView
@@ -26,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
-        android:layout_marginEnd="254dp"
+        android:layout_marginEnd="250dp"
         android:backgroundTint="#606060"
         android:onClick="cuadroDialogo"
         android:text="@string/seleccionar_piano"
@@ -38,7 +37,7 @@
         android:id="@+id/btnAcerca_de"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="2dp"
         android:backgroundTint="#606060"
         android:onClick="Acercade"
@@ -52,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="#606060"
         android:onClick="salir"
         android:text="@string/salir"
@@ -60,16 +59,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <LinearLayout
         android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
 
+        android:layout_marginStart="19dp"
         android:layout_marginTop="7dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginEnd="1dp"
         android:background="@drawable/piano"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btnsalir"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSeleccionarPiano">
 
 
