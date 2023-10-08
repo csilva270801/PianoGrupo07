@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void cuadroDialogo(View view) {
         stopMediaPlayer();
-        final String[] opciones = {"Piano Animales", "Piano instrumental","Acerca de...", "Salir"};
+        final String[] opciones = {"Piano Animales", "Piano instrumental"};
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Selecciona una opción")
