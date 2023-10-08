@@ -140,17 +140,7 @@ public class MainActivity extends AppCompatActivity {
                                 startActivity(intent);
                                 finish();
                                 break;
-                            case "Acerca de...":
-                                intent = new Intent(MainActivity.this, AcercaDe.class);
-                                startActivity(intent);
-                                finish();
-                                break;
 
-                            case "Salir":
-                                stopMediaPlayer();
-                                finishAffinity();
-                                System.exit(0);
-                                break;
                         }
                     }
                 });
