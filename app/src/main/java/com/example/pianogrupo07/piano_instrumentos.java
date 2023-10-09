@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -37,7 +38,15 @@ public class piano_instrumentos extends AppCompatActivity {
                 stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.arpa);
                 mediaPlayer.start();
-                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_arpa, Toast.LENGTH_SHORT).show();
+                Toast toast = Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_arpa, Toast.LENGTH_SHORT);
+                toast.show();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 800);
             }
         });
 
@@ -47,7 +56,16 @@ public class piano_instrumentos extends AppCompatActivity {
                 stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.bateria);
                 mediaPlayer.start();
-                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_bateria, Toast.LENGTH_SHORT).show();
+                Toast toast = Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_bateria, Toast.LENGTH_SHORT);
+                toast.show();
+
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 800);
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +74,17 @@ public class piano_instrumentos extends AppCompatActivity {
                 stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.flautaa);
                 mediaPlayer.start();
-                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_flauta, Toast.LENGTH_SHORT).show();
+                Toast toast = Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_flauta, Toast.LENGTH_SHORT);
+                toast.show();
+
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 800);
+
             }
         });
 
@@ -66,7 +94,16 @@ public class piano_instrumentos extends AppCompatActivity {
                 stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.guitarra);
                 mediaPlayer.start();
-                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_guitarra, Toast.LENGTH_SHORT).show();
+                Toast toast = Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_guitarra, Toast.LENGTH_SHORT);
+                toast.show();
+
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 800);
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
@@ -75,7 +112,16 @@ public class piano_instrumentos extends AppCompatActivity {
                 stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.maracas);
                 mediaPlayer.start();
-                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_unas_maracas, Toast.LENGTH_SHORT).show();
+                Toast toast = Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_unas_maracas, Toast.LENGTH_SHORT);
+                toast.show();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 800);
+
             }
         });
         btn6.setOnClickListener(new View.OnClickListener() {
@@ -84,7 +130,17 @@ public class piano_instrumentos extends AppCompatActivity {
                 stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.marimba);
                 mediaPlayer.start();
-                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_marimba, Toast.LENGTH_SHORT).show();
+                Toast toast = Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_marimba, Toast.LENGTH_SHORT);
+                toast.show();
+
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 800);
+
             }
         });
 
@@ -94,7 +150,16 @@ public class piano_instrumentos extends AppCompatActivity {
                 stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.trompeta_1);
                 mediaPlayer.start();
-                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_trompeta, Toast.LENGTH_SHORT).show();
+                Toast toast = Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_una_trompeta, Toast.LENGTH_SHORT);
+                toast.show();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 800);
+
             }
         });
         btn8.setOnClickListener(new View.OnClickListener() {
@@ -103,7 +168,17 @@ public class piano_instrumentos extends AppCompatActivity {
                 stopMediaPlayer();
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.triangulo);
                 mediaPlayer.start();
-                Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_triangulo, Toast.LENGTH_SHORT).show();
+                Toast toast = Toast.makeText(getApplicationContext(), R.string.es_el_sonido_de_un_triangulo, Toast.LENGTH_SHORT);
+                toast.show();
+
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 800);
+
             }
         });
 

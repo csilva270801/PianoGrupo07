@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Toast;
 
@@ -20,7 +21,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void SonidoDo(View view) {
         MediaPlayer sonido = MediaPlayer.create(MainActivity.this, R.raw.do1);
-        Toast.makeText(MainActivity.this, R.string.nota_musical_do, Toast.LENGTH_SHORT).show();
+        Toast toast= Toast.makeText(MainActivity.this, R.string.nota_musical_do, Toast.LENGTH_SHORT);
+        toast.show();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                toast.cancel();
+            }
+        }, 600);
         if (sonido.isPlaying()){
             sonido.stop();
         } else {
@@ -34,7 +43,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void SonidoRe(View view) {
         MediaPlayer sonido = MediaPlayer.create(MainActivity.this, R.raw.re);
-        Toast.makeText(MainActivity.this, R.string.nota_musical_re, Toast.LENGTH_SHORT).show();
+        Toast toast= Toast.makeText(MainActivity.this, R.string.nota_musical_re, Toast.LENGTH_SHORT);
+        toast.show();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                toast.cancel();
+            }
+        }, 600);
         if (sonido.isPlaying()){
             sonido.stop();
         } else {
@@ -48,7 +65,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void SonidoMi(View view) {
         MediaPlayer sonido = MediaPlayer.create(MainActivity.this, R.raw.mi);
-        Toast.makeText(MainActivity.this, R.string.nota_musical_mi, Toast.LENGTH_SHORT).show();
+        Toast toast= Toast.makeText(MainActivity.this, R.string.nota_musical_mi, Toast.LENGTH_SHORT);
+        toast.show();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                toast.cancel();
+            }
+        }, 600);
         if (sonido.isPlaying()){
             sonido.stop();
         } else {
@@ -62,7 +87,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void SonidoFa(View view) {
         MediaPlayer sonido = MediaPlayer.create(MainActivity.this, R.raw.fa);
-        Toast.makeText(MainActivity.this, R.string.nota_musical_fa, Toast.LENGTH_SHORT).show();
+        Toast toast = Toast.makeText(MainActivity.this, R.string.nota_musical_fa, Toast.LENGTH_SHORT);
+        toast.show();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                toast.cancel();
+            }
+        }, 600);
         if (sonido.isPlaying()){
             sonido.stop();
         } else {
@@ -76,7 +109,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void SonidoSol(View view) {
         MediaPlayer sonido = MediaPlayer.create(MainActivity.this, R.raw.sol);
-        Toast.makeText(MainActivity.this, R.string.nota_musical_sol, Toast.LENGTH_SHORT).show();
+        Toast toast= Toast.makeText(MainActivity.this, R.string.nota_musical_sol, Toast.LENGTH_SHORT);
+        toast.show();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                toast.cancel();
+            }
+        }, 600);
         if (sonido.isPlaying()){
             sonido.stop();
         } else {
@@ -90,7 +131,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void SonidoLa(View view) {
         MediaPlayer sonido = MediaPlayer.create(MainActivity.this, R.raw.la);
-        Toast.makeText(MainActivity.this, R.string.nota_musical_la, Toast.LENGTH_SHORT).show();
+        Toast toast=Toast.makeText(MainActivity.this, R.string.nota_musical_la, Toast.LENGTH_SHORT);
+        toast.show();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                toast.cancel();
+            }
+        }, 600);
         if (sonido.isPlaying()){
             sonido.stop();
         } else {
@@ -105,7 +154,15 @@ public class MainActivity extends AppCompatActivity {
     public void SonidoSi(View view) {
 
         MediaPlayer sonido = MediaPlayer.create(MainActivity.this, R.raw.si);
-        Toast.makeText(MainActivity.this, R.string.nota_musical_si, Toast.LENGTH_SHORT).show();
+        Toast toast= Toast.makeText(MainActivity.this, R.string.nota_musical_si, Toast.LENGTH_SHORT);
+        toast.show();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                toast.cancel();
+            }
+        }, 600);
         if (sonido.isPlaying()){
             sonido.stop();
         } else {
